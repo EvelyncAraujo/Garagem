@@ -1,5 +1,9 @@
 from django.contrib import admin
 from django.urls import include, path
+from core.views import CategoriaViewSet
+from core.views import AcessorioViewSet
+from core.views import CorViewSet
+from core.views import MarcaViewSet
 
 from drf_spectacular.views import (
     SpectacularAPIView,

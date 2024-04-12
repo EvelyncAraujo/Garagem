@@ -1,14 +1,7 @@
 from django.db import models
 
 class Marca(models.Model):
-    nome = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.nome
+    descricao = models.CharField(max_length=100)
     
-    class Nacionalidade(models.Model):
-      nacionalidade = models.CharField(max_length=50) 
-  
-
     def __str__(self):
-        return self.nacionalidade.upper()
+        return self.descricao

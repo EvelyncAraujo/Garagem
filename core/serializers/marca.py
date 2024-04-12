@@ -4,5 +4,5 @@ from core.models import Marca
 
 class MarcaSerializer(ModelSerializer):
     class Meta:
-        model: Marca
+        model = Marca
         fields = "__all__"
